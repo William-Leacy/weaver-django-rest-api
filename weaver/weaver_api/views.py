@@ -6,13 +6,13 @@ from .models import User, Gallery, WeavedImage
 
 
 class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all().order_by('username',)
+    queryset = User.objects.all()
     serializer_class = UserSerializer
 
 class GalleryViewSet(viewsets.ModelViewSet):
-    queryset = Gallery.objects.all().order_by('user',)
+    queryset = Gallery.objects.all()
     serializer_class = GallerySerializer
 
 class WeavedImageViewSet(viewsets.ModelViewSet):
-    queryset = WeavedImage.objects.all().order_by('image_url',)
+    queryset = WeavedImage.objects.all()
     serializer_class = WeavedImageSerializer
