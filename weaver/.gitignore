@@ -1,0 +1,5 @@
+weaver-env
+.env
+db.sqlite3
+*.py
+env
