@@ -1,1 +1,0 @@
-# weaver-django-rest-api

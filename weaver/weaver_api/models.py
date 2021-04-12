@@ -8,10 +8,9 @@ class WeaverUser(models.Model):
 
 class WeavedImage(models.Model):
     image_name = models.CharField(max_length=60)
-    image_source = models.ImageField(upload_to='user_images/',)
+    image_source = models.FileField(upload_to='user_images/', blank=True, null=True)
     image_url = models.URLField(blank=True, null=True)
     image_creation_time = models.DateTimeField(auto_now=True)
     weaved_user = models.ForeignKey(WeaverUser, related_name='weaved_images', on_delete=models.CASCADE,  blank=True, null=True)
     def __str__(self):
         return self.image_url
-
