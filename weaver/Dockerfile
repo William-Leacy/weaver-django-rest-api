@@ -9,8 +9,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 ADD . /home/app
 
 # Migrate the database
-RUN python manage.py migrate
+# RUN python manage.py migrate
 
-CMD python manage.py runserver 0.0.0.0:3010
+CMD python manage.py runserver 0.0.0.0:8000
 
-EXPOSE 3010
+EXPOSE 8000
