@@ -211,17 +211,4 @@ JWT_AUTH = {
 
 #S3 BUCKETS CONFIG
 
-AWS_ACCESS_KEY_ID = 'AKIA6H6OVFJUQ4J7RNMA'
-
-AWS_SECRET_ACCESS_KEY = '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'
-
-AWS_STORAGE_BUCKET_NAME = 'weaver-images-bucket'
-
-AWS_S3_FILE_OVERWRITE = False
-
-AWS_DEFAULT_ACL = None
-
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
